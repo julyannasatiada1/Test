@@ -4,54 +4,92 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jane Doe | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://jsdelivr.net" rel="stylesheet">
 </head>
-<body>
+<body class="bg-light text-dark">
 
-  <!-- Navigation Bar -->
-  <nav class="navbar">
-    <div class="nav-logo">Jane Doe</div>
-    <ul class="nav-links">
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="#media">Media</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#resume">Resume</a></li>
-    </ul>
-  </nav>
-
-  <!-- Main Hero Section -->
-  <header class="hero-container">
-    <div class="hero-content">
-      
-      <!-- Left Column: Circular Profile Picture -->
-      <div class="hero-left">
-        <div class="profile-circle-wrapper">
-          <img src="your-photo.jpg" alt="Jane Doe Profile Picture" class="profile-img">
+  <!-- nav bar component -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3">
+      <a class="navbar-brand" href="#">Jane Doe</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="navbar-nav">
+          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#skills">Skills</a>
+          <a class="nav-link" href="#projects">Projects</a>
+          <a class="nav-link" href="#contact">Contact</a>
         </div>
       </div>
-
-      <!-- Right Column: Big Bold Headline -->
-      <div class="hero-right">
-        <h1 class="main-headline">
-          Student pursuing a degree with career interests in various fields and industries.
-        </h1>
-      </div>
-
-    </div>
+    </nav>
   </header>
 
-  <!-- Main Body Intro Section -->
-  <main class="intro-section">
-    <div class="intro-container">
-      <div class="intro-label">
-        <hr class="divider">
-        <span>Intro</span>
+  <main class="container my-5">
+
+    <!-- about me section -->
+    <section id="about" class="row align-items-center mb-5">
+      <div class="col-md-4 text-center">
+        <img src="your-photo.jpg" alt="Jane Doe Profile" class="img-fluid rounded-circle" style="max-width: 200px;">
       </div>
-      <div class="intro-text">
-        <p>I am a student currently completing my education. I have a variety of personal and professional interests that drive my academic journey and career goals.</p>
+      <div class="col-md-8">
+        <h1>Jane Doe</h1>
+        <p>Student pursuing a degree with career interests in various fields.</p>
       </div>
-    </div>
+    </section>
+
+    <!-- skills section with badges component -->
+    <section id="skills" class="mb-5">
+      <h2>Skills</h2>
+      <span class="badge bg-primary">HTML</span>
+      <span class="badge bg-primary">CSS</span>
+      <span class="badge bg-primary">Bootstrap</span>
+    </section>
+
+    <!-- projects grid layout component -->
+    <section id="projects" class="mb-5">
+      <h2>Projects</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h3 class="h5 card-title">Project 1</h3>
+              <p class="card-text">Short project info details here.</p>
+              <a href="https://github.com" target="_blank" class="btn btn-primary">View</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact section with form element -->
+    <section id="contact" class="mb-5">
+      <h2>Contact Me</h2>
+      <form class="mb-3">
+        <div class="mb-3">
+          <input type="text" class="form-control" placeholder="Name" required>
+        </div>
+        <div class="mb-3">
+          <input type="email" class="form-control" placeholder="Email" required>
+        </div>
+        <div class="mb-3">
+          <textarea class="form-control" placeholder="Message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send</button>
+      </form>
+      <a href="https://linkedin.com" target="_blank" class="btn btn-outline-primary">LinkedIn Profile</a>
+    </section>
+
   </main>
 
+  <!-- simple footer layout -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="m-0">&copy; 2026 Jane Doe. <a href="https://github.com" target="_blank" class="text-white">GitHub</a></p>
+  </footer>
+
+  <!-- Bootstrap JS (required to make mobile menu toggle button open) -->
+  <script src="https://jsdelivr.net"></script>
 </body>
 </html>
