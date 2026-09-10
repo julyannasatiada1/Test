@@ -2,27 +2,35 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Jane Doe - Portfolio</title>
+    <title>Jane Doe Portfolio</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
 
 <body>
 
 <header>
+
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+
         <div class="container">
 
             <a class="navbar-brand" href="#">Jane Doe</a>
 
-            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#menu">
+
                 <span class="navbar-toggler-icon"></span>
+
             </button>
 
             <div class="collapse navbar-collapse" id="menu">
+
                 <ul class="navbar-nav ms-auto">
 
                     <li class="nav-item">
@@ -42,10 +50,13 @@
                     </li>
 
                 </ul>
+
             </div>
 
         </div>
+
     </nav>
+
 </header>
 
 
@@ -55,35 +66,33 @@
 
         <h1>Jane Doe</h1>
 
-        <p>Architect and Designer</p>
+        <p>Student Architect</p>
 
         <img src="https://placehold.co/200"
-             alt="Photo of Jane Doe"
-             class="img-fluid">
+            alt="Photo of Jane Doe">
 
         <h2>About Me</h2>
 
         <p>
-            Hi! I'm Jane. I'm an architect who enjoys designing
-            houses and other small spaces. I like making designs
-            that are simple, useful, and comfortable.
+            Hi! I'm Jane. I am interested in architecture
+            and designing different kinds of spaces. I enjoy
+            drawing, making floor plans, and learning new
+            things about architecture.
         </p>
 
     </section>
 
 
-    <section id="skills" class="bg-light py-5">
+    <section id="skills" class="container py-5">
 
-        <div class="container">
+        <h2>Skills</h2>
 
-            <h2>Skills</h2>
-
-            <span class="badge bg-primary">AutoCAD</span>
-            <span class="badge bg-primary">SketchUp</span>
-            <span class="badge bg-primary">3D Design</span>
-            <span class="badge bg-primary">Drawing</span>
-
-        </div>
+        <p>
+            <span class="badge text-bg-secondary">AutoCAD</span>
+            <span class="badge text-bg-secondary">SketchUp</span>
+            <span class="badge text-bg-secondary">Drawing</span>
+            <span class="badge text-bg-secondary">Floor Planning</span>
+        </p>
 
     </section>
 
@@ -95,68 +104,77 @@
         <div class="row">
 
             <div class="col-md-4">
+
                 <div class="card">
 
                     <div class="card-body">
 
-                        <h3>Family House</h3>
+                        <h3 class="card-title">House Design</h3>
 
-                        <p>
-                            A simple house design for a small family.
+                        <p class="card-text">
+                            A simple house design I made
+                            for a school project.
                         </p>
 
                         <a href="https://github.com/"
-                           class="btn btn-primary">
-                            View Project
+                            class="btn btn-secondary">
+                            View
                         </a>
 
                     </div>
 
                 </div>
+
             </div>
 
 
             <div class="col-md-4">
+
                 <div class="card">
 
                     <div class="card-body">
 
-                        <h3>Coffee Shop</h3>
+                        <h3 class="card-title">Floor Plan</h3>
 
-                        <p>
-                            A small coffee shop with a simple layout.
+                        <p class="card-text">
+                            A basic floor plan showing
+                            the layout of a small house.
                         </p>
 
                         <a href="https://github.com/"
-                           class="btn btn-primary">
-                            View Project
+                            class="btn btn-secondary">
+                            View
                         </a>
 
                     </div>
 
                 </div>
+
             </div>
 
 
             <div class="col-md-4">
+
                 <div class="card">
 
                     <div class="card-body">
 
-                        <h3>Tiny House</h3>
+                        <h3 class="card-title">Building Sketch</h3>
 
-                        <p>
-                            A small house design that uses space well.
+                        <p class="card-text">
+                            A building sketch I made
+                            while practicing my drawing.
                         </p>
 
                         <a href="https://github.com/"
-                           class="btn btn-primary">
-                            View Project
+                            class="btn btn-secondary">
+                            View
                         </a>
 
                     </div>
 
                 </div>
+
             </div>
 
         </div>
@@ -164,36 +182,34 @@
     </section>
 
 
-    <section id="contact" class="bg-light py-5">
+    <section id="contact" class="container py-5">
 
-        <div class="container">
+        <h2>Contact Me</h2>
 
-            <h2>Contact Me</h2>
+        <form>
 
-            <form>
+            <label>Name</label>
+            <input type="text" class="form-control">
 
-                <label class="form-label">Name</label>
-                <input type="text" class="form-control mb-2">
+            <label>Email</label>
+            <input type="email" class="form-control">
 
-                <label class="form-label">Email</label>
-                <input type="email" class="form-control mb-2">
+            <label>Message</label>
+            <textarea class="form-control"></textarea>
 
-                <label class="form-label">Message</label>
-                <textarea class="form-control mb-2"></textarea>
+            <br>
 
-                <button class="btn btn-primary">
-                    Send
-                </button>
+            <button class="btn btn-secondary">
+                Send
+            </button>
 
-                <a href="https://www.linkedin.com/"
-                   target="_blank"
-                   class="btn btn-outline-primary">
-                    LinkedIn
-                </a>
+            <a href="https://www.linkedin.com/"
+                target="_blank"
+                class="btn btn-secondary">
+                LinkedIn
+            </a>
 
-            </form>
-
-        </div>
+        </form>
 
     </section>
 
