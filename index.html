@@ -4,92 +4,112 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jane Doe | Portfolio</title>
-  <!-- Bootstrap 5 CSS -->
+  <!-- Official Bootstrap 5 CSS via CDN -->
   <link href="https://jsdelivr.net" rel="stylesheet">
 </head>
 <body class="bg-light text-dark">
 
-  <!-- nav bar component -->
+  <!-- 🧭 HEADER & RESPONSIVE NAVBAR -->
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3">
-      <a class="navbar-brand" href="#">Jane Doe</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <div class="navbar-nav">
-          <a class="nav-link" href="#about">About</a>
-          <a class="nav-link" href="#skills">Skills</a>
-          <a class="nav-link" href="#projects">Projects</a>
-          <a class="nav-link" href="#contact">Contact</a>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Jane Doe</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
   </header>
 
+  <!-- 📝 MAIN BODY -->
   <main class="container my-5">
 
-    <!-- about me section -->
+    <!-- 🧑‍💻 SECTION: ABOUT ME (Using Grid) -->
     <section id="about" class="row align-items-center mb-5">
       <div class="col-md-4 text-center">
-        <img src="your-photo.jpg" alt="Jane Doe Profile" class="img-fluid rounded-circle" style="max-width: 200px;">
+        <!-- Official Bootstrap Thumbnail Image Element -->
+        <img src="your-photo.jpg" class="img-thumbnail" alt="Jane Doe Profile Picture">
       </div>
       <div class="col-md-8">
         <h1>Jane Doe</h1>
-        <p>Student pursuing a degree with career interests in various fields.</p>
+        <p class="lead">Student pursuing a degree with career interests in various fields.</p>
       </div>
     </section>
 
-    <!-- skills section with badges component -->
+    <!-- 🛠️ SECTION: SKILLS (Using Badges) -->
     <section id="skills" class="mb-5">
-      <h2>Skills</h2>
+      <h2>h2. Skills</h2>
       <span class="badge bg-primary">HTML</span>
-      <span class="badge bg-primary">CSS</span>
-      <span class="badge bg-primary">Bootstrap</span>
+      <span class="badge bg-secondary">CSS</span>
+      <span class="badge bg-success">Bootstrap</span>
+      <span class="badge bg-dark">Git & GitHub</span>
     </section>
 
-    <!-- projects grid layout component -->
+    <!-- 🗂️ SECTION: PROJECTS (Using Grid Rows/Cols & Cards) -->
     <section id="projects" class="mb-5">
-      <h2>Projects</h2>
-      <div class="row row-cols-1 row-cols-md-3 g-3">
+      <h2>h2. Projects</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        
+        <!-- Card Item -->
         <div class="col">
           <div class="card h-100">
             <div class="card-body">
-              <h3 class="h5 card-title">Project 1</h3>
-              <p class="card-text">Short project info details here.</p>
-              <a href="https://github.com" target="_blank" class="btn btn-primary">View</a>
+              <h3 class="card-title h5">Project 1</h3>
+              <p class="card-text">Short description of your project or accomplishment goes right here.</p>
+              <a href="https://github.com" target="_blank" class="btn btn-primary">View Project</a>
             </div>
           </div>
         </div>
+
       </div>
     </section>
 
-    <!-- contact section with form element -->
+    <!-- ✉️ SECTION: CONTACT (Using Form & Buttons) -->
     <section id="contact" class="mb-5">
-      <h2>Contact Me</h2>
-      <form class="mb-3">
+      <h2>h2. Contact Me</h2>
+      <form class="mb-4">
         <div class="mb-3">
           <input type="text" class="form-control" placeholder="Name" required>
         </div>
         <div class="mb-3">
-          <input type="email" class="form-control" placeholder="Email" required>
+          <input type="email" class="form-control" placeholder="Email address" required>
         </div>
         <div class="mb-3">
-          <textarea class="form-control" placeholder="Message" required></textarea>
+          <textarea class="form-control" rows="3" placeholder="Message" required></textarea>
         </div>
-        <button type="submit" class="btn btn-primary">Send</button>
+        <button type="submit" class="btn btn-primary">Send Message</button>
       </form>
-      <a href="https://linkedin.com" target="_blank" class="btn btn-outline-primary">LinkedIn Profile</a>
+      
+      <!-- LinkedIn External Target Anchor Link Button -->
+      <a href="https://linkedin.com" target="_blank" class="btn btn-outline-primary">Connect on LinkedIn</a>
     </section>
 
   </main>
 
-  <!-- simple footer layout -->
+  <!-- 👣 FOOTER -->
   <footer class="bg-dark text-white text-center py-3">
-    <p class="m-0">&copy; 2026 Jane Doe. <a href="https://github.com" target="_blank" class="text-white">GitHub</a></p>
+    <div class="container">
+      <p class="m-0">&copy; 2026 Jane Doe. <a href="https://github.com" target="_blank" class="text-white-50 text-decoration-none">GitHub</a></p>
+    </div>
   </footer>
 
-  <!-- Bootstrap JS (required to make mobile menu toggle button open) -->
+  <!-- Official Bootstrap Bundle JS (Required for the mobile navbar burger button to open) -->
   <script src="https://jsdelivr.net"></script>
 </body>
 </html>
