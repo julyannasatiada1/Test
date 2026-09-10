@@ -1,234 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jane Doe</title>
 
-    <title>Jane Doe Portfolio</title>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="bg-light container my-4">
 
-<header>
+  <header class="bg-dark text-white text-center py-5 mb-5 rounded">
+    <h1>Jane Doe</h1>
+    <p>Architecture Student</p>
+  </header>
 
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+  <main>
 
-        <div class="container">
+    <section id="about" class="row align-items-center mb-5">
 
-            <a class="navbar-brand" href="#">Jane Doe</a>
+      <div class="col-md-4">
+        <img src="your-photo.jpg" class="img-thumbnail" alt="Photo of Jane Doe">
+      </div>
 
-            <button class="navbar-toggler" type="button"
-                data-bs-toggle="collapse" data-bs-target="#menu">
-
-                <span class="navbar-toggler-icon"></span>
-
-            </button>
-
-            <div class="collapse navbar-collapse" id="menu">
-
-                <ul class="navbar-nav ms-auto">
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-
-                </ul>
-
-            </div>
-
-        </div>
-
-    </nav>
-
-</header>
-
-
-<main>
-
-    <section id="about" class="container py-5">
-
-        <h1>Jane Doe</h1>
-
-        <p>Student Architect</p>
-
-        <img src="https://placehold.co/200"
-            alt="Photo of Jane Doe">
-
+      <div class="col-md-8">
         <h2>About Me</h2>
 
         <p>
-            Hi! I'm Jane. I am interested in architecture
-            and designing different kinds of spaces. I enjoy
-            drawing, making floor plans, and learning new
-            things about architecture.
+          Hi! I'm Jane. I am an architecture student who enjoys
+          designing buildings and drawing different ideas. I like
+          making simple and useful spaces while learning more about
+          architecture.
         </p>
+      </div>
 
     </section>
 
 
-    <section id="skills" class="container py-5">
+    <section id="skills" class="mb-5">
 
-        <h2>Skills</h2>
+      <h2>Skills</h2>
 
-        <p>
-            <span class="badge text-bg-secondary">AutoCAD</span>
-            <span class="badge text-bg-secondary">SketchUp</span>
-            <span class="badge text-bg-secondary">Drawing</span>
-            <span class="badge text-bg-secondary">Floor Planning</span>
-        </p>
+      <span class="badge bg-primary">AutoCAD</span>
+      <span class="badge bg-secondary">SketchUp</span>
+      <span class="badge bg-success">Drawing</span>
+      <span class="badge bg-warning text-dark">Floor Planning</span>
 
     </section>
 
 
-    <section id="projects" class="container py-5">
+    <section id="projects" class="mb-5">
 
-        <h2>Projects</h2>
+      <h2>Projects</h2>
 
-        <div class="row">
+      <div class="row row-cols-1 row-cols-md-3 g-3">
 
-            <div class="col-md-4">
+        <div class="col">
 
-                <div class="card">
+          <div class="card h-100">
 
-                    <div class="card-body">
+            <div class="card-body">
 
-                        <h3 class="card-title">House Design</h3>
+              <h5>House Design</h5>
 
-                        <p class="card-text">
-                            A simple house design I made
-                            for a school project.
-                        </p>
+              <p>
+                A simple house design I made for an
+                architecture school project.
+              </p>
 
-                        <a href="https://github.com/"
-                            class="btn btn-secondary">
-                            View
-                        </a>
-
-                    </div>
-
-                </div>
+              <a href="https://github.com"
+                target="_blank"
+                class="btn btn-primary">
+                View Project
+              </a>
 
             </div>
 
-
-            <div class="col-md-4">
-
-                <div class="card">
-
-                    <div class="card-body">
-
-                        <h3 class="card-title">Floor Plan</h3>
-
-                        <p class="card-text">
-                            A basic floor plan showing
-                            the layout of a small house.
-                        </p>
-
-                        <a href="https://github.com/"
-                            class="btn btn-secondary">
-                            View
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <div class="col-md-4">
-
-                <div class="card">
-
-                    <div class="card-body">
-
-                        <h3 class="card-title">Building Sketch</h3>
-
-                        <p class="card-text">
-                            A building sketch I made
-                            while practicing my drawing.
-                        </p>
-
-                        <a href="https://github.com/"
-                            class="btn btn-secondary">
-                            View
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
+          </div>
 
         </div>
 
-    </section>
 
+        <div class="col">
 
-    <section id="contact" class="container py-5">
+          <div class="card h-100">
 
-        <h2>Contact Me</h2>
+            <div class="card-body">
 
-        <form>
+              <h5>Floor Plan</h5>
 
-            <label>Name</label>
-            <input type="text" class="form-control">
+              <p>
+                A basic floor plan showing the layout
+                of a small house.
+              </p>
 
-            <label>Email</label>
-            <input type="email" class="form-control">
-
-            <label>Message</label>
-            <textarea class="form-control"></textarea>
-
-            <br>
-
-            <button class="btn btn-secondary">
-                Send
-            </button>
-
-            <a href="https://www.linkedin.com/"
+              <a href="https://github.com"
                 target="_blank"
-                class="btn btn-secondary">
-                LinkedIn
-            </a>
+                class="btn btn-primary">
+                View Project
+              </a>
 
-        </form>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="col">
+
+          <div class="card h-100">
+
+            <div class="card-body">
+
+              <h5>Building Sketch</h5>
+
+              <p>
+                A hand-drawn building sketch I made
+                while practicing architecture.
+              </p>
+
+              <a href="https://github.com"
+                target="_blank"
+                class="btn btn-primary">
+                View Project
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
 
     </section>
 
-</main>
+
+    <section id="contact" class="mb-5">
+
+      <h2>Contact Me</h2>
+
+      <form class="mb-3">
+
+        <input type="text"
+          class="form-control mb-2"
+          placeholder="Your Name"
+          required>
+
+        <input type="email"
+          class="form-control mb-2"
+          placeholder="Your Email"
+          required>
+
+        <textarea
+          class="form-control mb-2"
+          placeholder="Your Message"
+          required></textarea>
+
+        <button type="submit" class="btn btn-primary">
+          Send
+        </button>
+
+      </form>
+
+      <a href="https://linkedin.com"
+        target="_blank"
+        class="btn btn-outline-primary">
+        LinkedIn
+      </a>
+
+    </section>
+
+  </main>
 
 
-<footer class="bg-dark text-white text-center p-3">
+  <footer class="bg-dark text-white text-center py-3 rounded">
 
-    <p>© 2026 Jane Doe</p>
-
-    <a href="https://github.com/" class="text-white">
+    <p class="m-0">
+      &copy; 2026 Jane Doe.
+      <a href="https://github.com"
+        target="_blank"
+        class="text-white">
         GitHub
-    </a>
+      </a>
+    </p>
 
-</footer>
+  </footer>
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
-
 </html>
