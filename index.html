@@ -3,194 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Jane Doe</title>
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://jsdelivr.net" rel="stylesheet">
 </head>
-
 <body class="bg-light container my-4">
 
-  <header class="bg-dark text-white text-center py-5 mb-5 rounded">
-    <h1>Jane Doe</h1>
-    <p>Architecture Student</p>
+  <!-- 🧭 LARGE HEADER BRANDING BANNER (Replaced Navbar Link Menu) -->
+  <header class="bg-dark text-white text-center py-5 mb-5 rounded shadow-sm">
+    <h1 class="display-3 fw-bold m-0 text-uppercase tracking-wide">Jane Doe</h1>
+    <p class="lead text-white-50 m-0 mt-2">[Insert Subtitle / Headline Title]</p>
   </header>
 
-  <main>
-
+  <main class="my-5">
     <section id="about" class="row align-items-center mb-5">
-
-      <div class="col-md-4">
-        <img src="your-photo.jpg" class="img-thumbnail" alt="Photo of Jane Doe">
-      </div>
-
-      <div class="col-md-8">
-        <h2>About Me</h2>
-
-        <p>
-          Hi! I'm Jane. I am an architecture student who enjoys
-          designing buildings and drawing different ideas. I like
-          making simple and useful spaces while learning more about
-          architecture.
-        </p>
-      </div>
-
+      <div class="col-md-4"><img src="your-photo.jpg" class="img-thumbnail" alt="Jane Doe"></div>
+      <div class="col-md-8"><h2>h2. About Me</h2><p class="lead">[Insert paragraph about yourself, your background, and goals]</p></div>
     </section>
-
 
     <section id="skills" class="mb-5">
-
-      <h2>Skills</h2>
-
-      <span class="badge bg-primary">AutoCAD</span>
-      <span class="badge bg-secondary">SketchUp</span>
-      <span class="badge bg-success">Drawing</span>
-      <span class="badge bg-warning text-dark">Floor Planning</span>
-
+      <h2>h2. Skills</h2>
+      <span class="badge bg-primary">[Insert Skill 1]</span><span class="badge bg-secondary">[Insert Skill 2]</span><span class="badge bg-success">[Insert Skill 3]</span>
     </section>
-
 
     <section id="projects" class="mb-5">
-
-      <h2>Projects</h2>
-
+      <h2>h2. Projects</h2>
       <div class="row row-cols-1 row-cols-md-3 g-3">
-
-        <div class="col">
-
-          <div class="card h-100">
-
-            <div class="card-body">
-
-              <h5>House Design</h5>
-
-              <p>
-                A simple house design I made for an
-                architecture school project.
-              </p>
-
-              <a href="https://github.com"
-                target="_blank"
-                class="btn btn-primary">
-                View Project
-              </a>
-
-            </div>
-
-          </div>
-
-        </div>
-
-
-        <div class="col">
-
-          <div class="card h-100">
-
-            <div class="card-body">
-
-              <h5>Floor Plan</h5>
-
-              <p>
-                A basic floor plan showing the layout
-                of a small house.
-              </p>
-
-              <a href="https://github.com"
-                target="_blank"
-                class="btn btn-primary">
-                View Project
-              </a>
-
-            </div>
-
-          </div>
-
-        </div>
-
-
-        <div class="col">
-
-          <div class="card h-100">
-
-            <div class="card-body">
-
-              <h5>Building Sketch</h5>
-
-              <p>
-                A hand-drawn building sketch I made
-                while practicing architecture.
-              </p>
-
-              <a href="https://github.com"
-                target="_blank"
-                class="btn btn-primary">
-                View Project
-              </a>
-
-            </div>
-
-          </div>
-
-        </div>
-
+        <div class="col"><div class="card h-100"><div class="card-body"><h5>[Insert Project Title]</h5><p>[Insert project details and brief explanation here]</p><a href="https://github.com" target="_blank" class="btn btn-primary">[Insert Link Button Text]</a></div></div></div>
       </div>
-
     </section>
-
 
     <section id="contact" class="mb-5">
-
-      <h2>Contact Me</h2>
-
+      <h2>h2. Contact Me</h2>
       <form class="mb-3">
-
-        <input type="text"
-          class="form-control mb-2"
-          placeholder="Your Name"
-          required>
-
-        <input type="email"
-          class="form-control mb-2"
-          placeholder="Your Email"
-          required>
-
-        <textarea
-          class="form-control mb-2"
-          placeholder="Your Message"
-          required></textarea>
-
-        <button type="submit" class="btn btn-primary">
-          Send
-        </button>
-
+        <div class="mb-2"><input type="text" class="form-control" placeholder="[Insert Name Input]" required></div>
+        <div class="mb-2"><input type="email" class="form-control" placeholder="[Insert Email Input]" required></div>
+        <div class="mb-2"><textarea class="form-control" placeholder="[Insert Message Input]" required></textarea></div>
+        <button type="submit" class="btn btn-primary">[Insert Submit Form Button Text]</button>
       </form>
-
-      <a href="https://linkedin.com"
-        target="_blank"
-        class="btn btn-outline-primary">
-        LinkedIn
-      </a>
-
+      <a href="https://linkedin.com" target="_blank" class="btn btn-outline-primary">[Insert LinkedIn Profile Link Button]</a>
     </section>
-
   </main>
 
-
   <footer class="bg-dark text-white text-center py-3 rounded">
-
-    <p class="m-0">
-      &copy; 2026 Jane Doe.
-      <a href="https://github.com"
-        target="_blank"
-        class="text-white">
-        GitHub
-      </a>
-    </p>
-
+    <p class="m-0">&copy; 2026 Jane Doe. <a href="https://github.com" target="_blank" class="text-white">[Insert GitHub Footer Link Text]</a></p>
   </footer>
 
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-
+  <script src="https://jsdelivr.net"></script>
 </body>
 </html>
