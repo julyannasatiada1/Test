@@ -2,310 +2,216 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Jane Doe | Architect</title>
+    <title>Jane Doe - Portfolio</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-
 </head>
 
 <body>
 
-    <header>
+<header>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container">
 
-        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <a class="navbar-brand" href="#">Jane Doe</a>
 
-            <div class="container">
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                <a class="navbar-brand" href="#">
-                    Jane Doe
-                </a>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
 
-                <button class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#menu">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
 
-                    <span class="navbar-toggler-icon"></span>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
 
-                </button>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
 
-                <div class="collapse navbar-collapse" id="menu">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
 
-                    <ul class="navbar-nav ms-auto">
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#skills">Skills</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#projects">Projects</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li>
-
-                    </ul>
-
-                </div>
-
+                </ul>
             </div>
 
-        </nav>
+        </div>
+    </nav>
+</header>
 
-    </header>
 
+<main>
 
-    <main>
+    <section id="about" class="container py-5">
 
-        <section id="about" class="py-5">
+        <h1>Jane Doe</h1>
 
-            <div class="container">
+        <p>Architect and Designer</p>
 
-                <div class="row align-items-center">
+        <img src="https://placehold.co/200"
+             alt="Photo of Jane Doe"
+             class="img-fluid">
 
-                    <div class="col-md-4">
-
-                        <img src="https://placehold.co/300"
-                            alt="Photo of Jane Doe"
-                            class="img-fluid rounded">
-
-                    </div>
-
-                    <div class="col-md-8">
-
-                        <h1>Jane Doe</h1>
-
-                        <p class="lead">
-                            Architect & Designer
-                        </p>
-
-                        <h2>About Me</h2>
-
-                        <p>
-                            Hi! I'm Jane. I'm an architect who enjoys
-                            designing simple and comfortable spaces.
-                            I mostly work on houses and small buildings.
-                            I also enjoy sketching ideas and trying
-                            different designs.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <section id="skills" class="py-5 bg-light">
-
-            <div class="container">
-
-                <h2>Skills</h2>
-
-                <span class="badge text-bg-primary">
-                    AutoCAD
-                </span>
-
-                <span class="badge text-bg-primary">
-                    SketchUp
-                </span>
-
-                <span class="badge text-bg-primary">
-                    Architectural Design
-                </span>
-
-                <span class="badge text-bg-primary">
-                    Space Planning
-                </span>
-
-                <span class="badge text-bg-primary">
-                    3D Modeling
-                </span>
-
-            </div>
-
-        </section>
-
-
-        <section id="projects" class="py-5">
-
-            <div class="container">
-
-                <h2>Projects</h2>
-
-                <div class="row g-3">
-
-                    <div class="col-md-4">
-
-                        <div class="card">
-
-                            <div class="card-body">
-
-                                <h3 class="card-title">
-                                    Family House
-                                </h3>
-
-                                <p class="card-text">
-                                    A two-story house designed for
-                                    a small family. I focused on
-                                    making the rooms simple and
-                                    comfortable.
-                                </p>
-
-                                <a href="https://github.com/"
-                                    target="_blank"
-                                    class="btn btn-primary">
-                                    View Project
-                                </a>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="col-md-4">
-
-                        <div class="card">
-
-                            <div class="card-body">
-
-                                <h3 class="card-title">
-                                    Small Coffee Shop
-                                </h3>
-
-                                <p class="card-text">
-                                    A small coffee shop design
-                                    with a simple layout and
-                                    a relaxed atmosphere.
-                                </p>
-
-                                <a href="https://github.com/"
-                                    target="_blank"
-                                    class="btn btn-primary">
-                                    View Project
-                                </a>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="col-md-4">
-
-                        <div class="card">
-
-                            <div class="card-body">
-
-                                <h3 class="card-title">
-                                    Tiny House
-                                </h3>
-
-                                <p class="card-text">
-                                    A small house design that
-                                    makes good use of limited
-                                    space.
-                                </p>
-
-                                <a href="https://github.com/"
-                                    target="_blank"
-                                    class="btn btn-primary">
-                                    View Project
-                                </a>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <section id="contact" class="py-5 bg-light">
-
-            <div class="container">
-
-                <h2>Contact Me</h2>
-
-                <form>
-
-                    <label class="form-label">
-                        Name
-                    </label>
-
-                    <input type="text"
-                        class="form-control mb-3"
-                        placeholder="Your name">
-
-                    <label class="form-label">
-                        Email
-                    </label>
-
-                    <input type="email"
-                        class="form-control mb-3"
-                        placeholder="Your email">
-
-                    <label class="form-label">
-                        Message
-                    </label>
-
-                    <textarea class="form-control mb-3"
-                        placeholder="Your message"></textarea>
-
-                    <button type="submit"
-                        class="btn btn-primary">
-                        Send
-                    </button>
-
-                    <a href="https://www.linkedin.com/"
-                        target="_blank"
-                        class="btn btn-outline-primary">
-                        LinkedIn
-                    </a>
-
-                </form>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <footer class="bg-dark text-white text-center p-3">
+        <h2>About Me</h2>
 
         <p>
-            © 2026 Jane Doe
+            Hi! I'm Jane. I'm an architect who enjoys designing
+            houses and other small spaces. I like making designs
+            that are simple, useful, and comfortable.
         </p>
 
-        <a href="https://github.com/"
-            class="text-white">
-            GitHub
-        </a>
-
-    </footer>
+    </section>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <section id="skills" class="bg-light py-5">
+
+        <div class="container">
+
+            <h2>Skills</h2>
+
+            <span class="badge bg-primary">AutoCAD</span>
+            <span class="badge bg-primary">SketchUp</span>
+            <span class="badge bg-primary">3D Design</span>
+            <span class="badge bg-primary">Drawing</span>
+
+        </div>
+
+    </section>
+
+
+    <section id="projects" class="container py-5">
+
+        <h2>Projects</h2>
+
+        <div class="row">
+
+            <div class="col-md-4">
+                <div class="card">
+
+                    <div class="card-body">
+
+                        <h3>Family House</h3>
+
+                        <p>
+                            A simple house design for a small family.
+                        </p>
+
+                        <a href="https://github.com/"
+                           class="btn btn-primary">
+                            View Project
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="col-md-4">
+                <div class="card">
+
+                    <div class="card-body">
+
+                        <h3>Coffee Shop</h3>
+
+                        <p>
+                            A small coffee shop with a simple layout.
+                        </p>
+
+                        <a href="https://github.com/"
+                           class="btn btn-primary">
+                            View Project
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="col-md-4">
+                <div class="card">
+
+                    <div class="card-body">
+
+                        <h3>Tiny House</h3>
+
+                        <p>
+                            A small house design that uses space well.
+                        </p>
+
+                        <a href="https://github.com/"
+                           class="btn btn-primary">
+                            View Project
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="contact" class="bg-light py-5">
+
+        <div class="container">
+
+            <h2>Contact Me</h2>
+
+            <form>
+
+                <label class="form-label">Name</label>
+                <input type="text" class="form-control mb-2">
+
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control mb-2">
+
+                <label class="form-label">Message</label>
+                <textarea class="form-control mb-2"></textarea>
+
+                <button class="btn btn-primary">
+                    Send
+                </button>
+
+                <a href="https://www.linkedin.com/"
+                   target="_blank"
+                   class="btn btn-outline-primary">
+                    LinkedIn
+                </a>
+
+            </form>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer class="bg-dark text-white text-center p-3">
+
+    <p>© 2026 Jane Doe</p>
+
+    <a href="https://github.com/" class="text-white">
+        GitHub
+    </a>
+
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
