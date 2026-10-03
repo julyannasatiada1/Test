@@ -1,196 +1,152 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julyanna's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-
 <body class="bg-light">
 
 <header>
-
-  <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
       <a class="navbar-brand" href="#">Julyanna</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-```
-  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="menu">
-    <ul class="navbar-nav ms-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="#about">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#skills">Skills</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#projects">Projects</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#contact">Contact</a>
-      </li>
-    </ul>
-  </div>
-</div>
-```
-
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </nav>
 
-  <div class="container text-center mt-5">
+  <div class="container text-center mt-4">
     <h1>Julyanna Marie Satiada</h1>
     <p>Information Systems Student</p>
   </div>
-
 </header>
 
-<main class="container mt-5">
+<main class="container mt-4">
 
+  <!-- About Section -->
   <section id="about" class="mb-5">
     <h2>About Me</h2>
-
-```
-<div class="row">
-  <div class="col-md-4">
-    <img src="Screenshot 2026-09-10 152021.png" class="img-fluid" alt="Julyanna Satiada">
-  </div>
-
-  <div class="col-md-8">
-    <p>
-      Hi, I'm Julyanna. I am an Information Systems student who is
-      interested in technology and learning how different systems work.
-      I am currently learning programming, databases, and web development.
-    </p>
-  </div>
-</div>
-```
-
+    <div class="row mt-3">
+      <div class="col-md-4">
+        <img src="Screenshot 2026-09-10 152021.png" alt="Julyanna Satiada" class="img-fluid rounded">
+      </div>
+      <div class="col-md-8">
+        <p>
+          Hi, I'm Julyanna! I am an Information Systems student who is interested in 
+          technology and learning how different systems work. I am currently learning 
+          programming, database design, and web development.
+        </p>
+      </div>
+    </div>
   </section>
 
+  <!-- Skills Section -->
   <section id="skills" class="mb-5">
     <h2>Skills</h2>
-
-```
-<ul class="list-group">
-  <li class="list-group-item">Java</li>
-  <li class="list-group-item">HTML and CSS</li>
-  <li class="list-group-item">SQL</li>
-  <li class="list-group-item">Basic C#</li>
-</ul>
-```
-
+    <div class="mt-3">
+      <span class="badge bg-primary fs-6 me-1">Java</span>
+      <span class="badge bg-secondary fs-6 me-1">HTML & CSS</span>
+      <span class="badge bg-success fs-6 me-1">SQL</span>
+      <span class="badge bg-info text-dark fs-6 me-1">Basic C#</span>
+      <span class="badge bg-dark fs-6 me-1">Bootstrap</span>
+    </div>
   </section>
 
+  <!-- Projects Section -->
   <section id="projects" class="mb-5">
     <h2>Projects</h2>
 
-```
-<div class="row">
+    <div class="row">
+      <div class="col-md-4 mb-3">
+        <div class="card h-100">
+          <div class="card-body">
+            <h3 class="card-title h5">HR Management System</h3>
+            <p class="card-text">A Java project for managing employee records and payroll.</p>
+            <a href="https://github.com/julyannasatiada1/Portfolio-" target="_blank" class="btn btn-primary">View Repo</a>
+          </div>
+        </div>
+      </div>
 
-  <div class="col-md-4">
-    <div class="card">
-      <div class="card-body">
-        <h3 class="card-title">HR Management System</h3>
-        <p class="card-text">
-          A Java project for managing employee records and payroll.
-        </p>
-        <a href="https://github.com/julyannasatiada1/Portfolio-" class="btn btn-primary">
-          View Project
-        </a>
+      <div class="col-md-4 mb-3">
+        <div class="card h-100">
+          <div class="card-body">
+            <h3 class="card-title h5">Help Desk System</h3>
+            <p class="card-text">A system for submitting and managing tech support requests.</p>
+            <a href="https://github.com/julyannasatiada1/Portfolio-" target="_blank" class="btn btn-primary">View Repo</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <div class="card h-100">
+          <div class="card-body">
+            <h3 class="card-title h5">Inventory Database</h3>
+            <p class="card-text">A simple database project for managing product inventory levels.</p>
+            <a href="https://github.com/julyannasatiada1/Portfolio-" target="_blank" class="btn btn-primary">View Repo</a>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-
-  <div class="col-md-4">
-    <div class="card">
-      <div class="card-body">
-        <h3 class="card-title">Help Desk System</h3>
-        <p class="card-text">
-          A system for submitting and managing help desk requests.
-        </p>
-        <a href="https://github.com/julyannasatiada1/Portfolio-" class="btn btn-primary">
-          View Project
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-md-4">
-    <div class="card">
-      <div class="card-body">
-        <h3 class="card-title">Inventory Database</h3>
-        <p class="card-text">
-          A simple SQLite database for managing products and inventory.
-        </p>
-        <a href="https://github.com/julyannasatiada1/Portfolio-" class="btn btn-primary">
-          View Project
-        </a>
-      </div>
-    </div>
-  </div>
-
-</div>
-```
-
   </section>
 
+  <!-- Contact Section -->
   <section id="contact" class="mb-5">
     <h2>Contact Me</h2>
 
-```
-<form>
-  <div class="mb-3">
-    <label class="form-label">Name</label>
-    <input type="text" class="form-control">
-  </div>
+    <form>
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" id="name" class="form-control" placeholder="Your name">
+      </div>
 
-  <div class="mb-3">
-    <label class="form-label">Email</label>
-    <input type="email" class="form-control">
-  </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" id="email" class="form-control" placeholder="Your email">
+      </div>
 
-  <div class="mb-3">
-    <label class="form-label">Message</label>
-    <textarea class="form-control"></textarea>
-  </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Message</label>
+        <textarea id="message" class="form-control" rows="3" placeholder="Write your message here..."></textarea>
+      </div>
 
-  <button type="submit" class="btn btn-primary">
-    Submit
-  </button>
-</form>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
 
-<br>
-
-<a href="https://github.com/julyannasatiada1" target="_blank" class="btn btn-outline-primary">
-  LinkedIn
-</a>
-```
-
+    <div class="mt-4">
+      <a href="https://www.linkedin.com" target="_blank" class="btn btn-outline-primary">LinkedIn</a>
+    </div>
   </section>
 
 </main>
 
 <footer class="bg-dark text-white text-center p-3">
   <p>© 2026 Julyanna Marie Satiada</p>
-  <a href="https://github.com/julyannasatiada1" target="_blank" class="text-white">
-    GitHub
-  </a>
+  <div>
+    <a href="https://github.com/julyannasatiada1" target="_blank" class="text-white me-3">GitHub Profile</a>
+    <a href="https://github.com/julyannasatiada1/Portfolio-" target="_blank" class="text-white">Portfolio Repo</a>
+  </div>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-
-</body>
-</html>
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
