@@ -46,8 +46,8 @@
   <!-- About Section -->
   <section id="about" class="mb-5">
     <h2>About Me</h2>
-    <div class="row mt-3">
-      <div class="col-md-4">
+    <div class="row mt-3 align-items-center">
+      <div class="col-md-4 mb-3 mb-md-0">
         <img src="Screenshot 2026-09-10 152021.png" alt="Julyanna Satiada" class="img-fluid rounded">
       </div>
       <div class="col-md-8">
@@ -72,40 +72,53 @@
     </div>
   </section>
 
-  <!-- Projects Section -->
+  <!-- Projects Section (Carousel) -->
   <section id="projects" class="mb-5">
     <h2>Projects</h2>
 
-    <div class="row">
-      <div class="col-md-4 mb-3">
-        <div class="card h-100">
-          <div class="card-body">
-            <h3 class="card-title h5">HR Management System</h3>
-            <p class="card-text">A Java project for managing employee records and payroll.</p>
-            <a href="https://github.com/julyannasatiada1/Portfolio-" target="_blank" class="btn btn-primary">View Repo</a>
+    <div id="projectCarousel" class="carousel carousel-dark slide mt-3" data-bs-ride="carousel">
+      <div class="carousel-inner px-5">
+        
+        <div class="carousel-item active">
+          <div class="card mx-auto" style="max-width: 500px;">
+            <div class="card-body text-center">
+              <h3 class="card-title h5">HR Management System</h3>
+              <p class="card-text">A Java project for managing employee records and payroll.</p>
+              <a href="https://github.com/julyannasatiada1/Portfolio-" target="_blank" class="btn btn-primary">View Repo</a>
+            </div>
           </div>
         </div>
+
+        <div class="carousel-item">
+          <div class="card mx-auto" style="max-width: 500px;">
+            <div class="card-body text-center">
+              <h3 class="card-title h5">Help Desk System</h3>
+              <p class="card-text">A system for submitting and managing tech support requests.</p>
+              <a href="https://github.com/julyannasatiada1/Portfolio-" target="_blank" class="btn btn-primary">View Repo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="card mx-auto" style="max-width: 500px;">
+            <div class="card-body text-center">
+              <h3 class="card-title h5">Inventory Database</h3>
+              <p class="card-text">A simple database project for managing product inventory levels.</p>
+              <a href="https://github.com/julyannasatiada1/Portfolio-" target="_blank" class="btn btn-primary">View Repo</a>
+            </div>
+          </div>
+        </div>
+
       </div>
 
-      <div class="col-md-4 mb-3">
-        <div class="card h-100">
-          <div class="card-body">
-            <h3 class="card-title h5">Help Desk System</h3>
-            <p class="card-text">A system for submitting and managing tech support requests.</p>
-            <a href="https://github.com/julyannasatiada1/Portfolio-" target="_blank" class="btn btn-primary">View Repo</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4 mb-3">
-        <div class="card h-100">
-          <div class="card-body">
-            <h3 class="card-title h5">Inventory Database</h3>
-            <p class="card-text">A simple database project for managing product inventory levels.</p>
-            <a href="https://github.com/julyannasatiada1/Portfolio-" target="_blank" class="btn btn-primary">View Repo</a>
-          </div>
-        </div>
-      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
   </section>
 
@@ -132,18 +145,20 @@
       <button type="submit" class="btn btn-primary">Submit</button>
     </form>
 
-    <div class="mt-4">
+    <div class="mt-3">
       <a href="https://www.linkedin.com" target="_blank" class="btn btn-outline-primary">LinkedIn</a>
     </div>
   </section>
 
 </main>
 
-<footer class="bg-dark text-white text-center p-3">
-  <p>© 2026 Julyanna Marie Satiada</p>
-  <div>
-    <a href="https://github.com/julyannasatiada1" target="_blank" class="text-white me-3">GitHub Profile</a>
-    <a href="https://github.com/julyannasatiada1/Portfolio-" target="_blank" class="text-white">Portfolio Repo</a>
+<footer class="bg-white text-dark border-top py-3 mt-5">
+  <div class="container d-flex justify-content-between align-items-center">
+    <p class="mb-0">© 2026 Julyanna Marie Satiada</p>
+    <div>
+      <a href="https://github.com/julyannasatiada1" target="_blank" class="text-dark me-3">GitHub Profile</a>
+      <a href="https://github.com/julyannasatiada1/Portfolio-" target="_blank" class="text-dark">Portfolio Repo</a>
+    </div>
   </div>
 </footer>
 
